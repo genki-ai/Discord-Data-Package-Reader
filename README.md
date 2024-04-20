@@ -1,16 +1,41 @@
-# Tauri + Vue 3 + TypeScript
+# Discord Data Parser
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A cross-platform application that can parse the discord data package through a GUI, making it easier to examine through it.
+[What is in my data package?](https://support.discord.com/hc/en-us/articles/360004957991-Your-Discord-Data-Package)
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+## How to use
 
-## Type Support For `.vue` Imports in TS
+Have you have your package.zip ready. [My what?](https://support.discord.com/hc/en-us/articles/360004027692-Requesting-a-Copy-of-your-Data)
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+While the application is open, click on the "Open Package" button and select the package.zip you received from Discord.
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+You can now browse through the app and see what your data holds!
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+## Build
+
+`git clone https://github.com/genki-ai/discord-data-package-reader.git` 
+
+`bun install`
+
+`bunx tauri build`
+
+## TODO
+
+- [ ] Cleanup UI
+- [ ] Show profile picture
+- [ ] Message search
+- [ ] Analytics
+- [ ] Export data
+- [ ] Saved gifs
+- [ ] Group channels into their servers
+- [ ] Friends list
+- [ ] Show usernames instead of ID for DM messages
+
+
+## Built with
+
+- [Tauri](https://github.com/tauri-apps/tauri) - Cross platform application
+- [Bun](https://github.com/oven-sh/bun) - Javascript runtime
+- [Rust](https://github.com/rust-lang/rust) - Backend
+- my tiny paws
